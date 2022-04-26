@@ -287,6 +287,7 @@ h1::after {
 #details-container .nav-bar .nav-buttons a {
     text-decoration: none;
     color: #000;
+    font-weight: lighter;
 }
 
 .item-hide {
