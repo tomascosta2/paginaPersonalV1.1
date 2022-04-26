@@ -15,14 +15,16 @@
         -->
         <div class="menu">
 
-            <a href="#" id="logo">TC</a>
+            <div class="logo-cont">
+                <a href="#" id="logo">TC</a>
+            </div>
 
             <div class="menu-items">
                 <ul>
-                    <li><a href="#">Incio</a></li>
-                    <li><a href="#">Acerca</a></li>
-                    <li><a href="#">Trabajo</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#start">Incio</a></li>
+                    <li><a href="#about">Acerca</a></li>
+                    <li><a href="#work">Trabajo</a></li>
+                    <li><a href="#contact">Contacto</a></li>
                 </ul>
             </div>
 
@@ -30,12 +32,15 @@
 
          <!--
             MENU MOBILE
-        -->
 
-        <div class="menu-mobile">
-            <a href="#" class="logo">TC</a>
+            <div class="menu-mobile">
+            <div class="logo-cont">
+                <a href="#" class="logo">TC</a>
+            </div>
 
-            <a href="#" id="buttonOpenCloseMenu" class="fa-solid fa-bars"></a>
+            <div class="burger-cont">
+                <a href="#" id="buttonOpenCloseMenu" class="fa-solid fa-bars"></a>
+            </div>
 
             <div id="menu-mobile-items" class="menu-mobile-closed">
                 <ul>
@@ -46,21 +51,41 @@
                 </ul>
             </div>
         </div>
+        -->
+
+        <div class="menu-mobile">
+            <div class="menu-open-close">
+                <div class="header">
+                    <a href="#" class="logo">TC</a>
+
+                    <a href="#" id="buttonOpenCloseMenu" class="fa-solid fa-bars"></a>
+                </div>
+                <div id="menu-mobile-items" class="menu-mobile-closed">
+                    <ul>
+                        <li><a href="#start">INICIO</a></li>
+                        <li><a href="#about">ACERCA</a></li>
+                        <li><a href="#work">TRABAJOS</a></li>
+                        <li><a href="#contact">CONTACTO</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
 
         <!--
             INICIO
         -->
 
-        <div class="inicio">
+        <div class="inicio" id="start">
             <h1>Hola, soy Tomás.</h1>
-            <p class="subtitulo">Full Stack developer</p>
+            <p class="subtitulo">Full Stack student</p>
         </div>
 
         <!--
             ABOUT
         -->
 
-        <section class="about">
+        <section class="about" id="about">
             <h2>ACERCA DE MI</h2>
 
             <div class="about-cont">
@@ -70,7 +95,7 @@
                 </div>
                 <div class="skills-cont">
                     <h3>HABILIDADES</h3>
-                    <p>HTML | CSS | javaScript</p>
+                    <p>HTML | CSS | javaScript | <a href="#contact">+</a></p>
                 </div>
             </div>
         </section>
@@ -196,7 +221,7 @@
             CONTACT
         -->
 
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="contact-data-cont">
                 <h2>CONTACTO</h2>
                 <p class="contact-info">+54 9 2616841853</p>
@@ -204,7 +229,7 @@
                 <p class="contact-info">Mendoza, Argentina</p>
                 <a href="#" class="fa-brands fa-whatsapp"></a>
                 <a href="#" class="fa-brands fa-linkedin-in"></a>
-                <a href="#" class="fa-brands fa-whatsapp"></a>
+                <a href="#" class="fa-brands fa-instagram"></a>
                 <a href="#" class="fa-brands fa-github"></a>
             </div>
         </section>
