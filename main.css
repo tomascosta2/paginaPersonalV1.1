@@ -1,12 +1,18 @@
 :root {
-    --colorFondo: #fff;
+    --colorFondoLight: #fff;
+    --colorFondoDark: #222;
+
 }
 
 body {
     margin: 0;
     font-family: monospace;
     min-height: 100vh;
-    background-color: var(--colorFondo);
+    background-color: var(--colorFondoLight);
+}
+
+body.dark {
+    background-color: var(--colorFondoDark);
 }
 
 html {
@@ -39,6 +45,19 @@ h2 {
     list-style:none
 }
 
+.menu .menu-items button,
+.menu-mobile #menu-mobile-items button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    top: 2px;
+}
+
+body.dark .menu .menu-items button {
+    color: #fff;
+}
+
 .menu a {
     text-decoration: none;
     color: #333;
@@ -46,8 +65,16 @@ h2 {
     font-weight: 600;
 }
 
+body.dark .menu a {
+    color: #eee;
+}
+
 .menu .menu-items ul li a:hover {
-    color: #888;
+    color: #ddd;
+}
+
+body.dark .menu .menu-items ul li a:hover {
+    color: #fff;
 }
 
 #logo {
@@ -72,8 +99,16 @@ h2 {
     margin: 15px;
 }
 
+body.dark .menu-mobile a {
+    color: #ddd;
+}
+
 .menu-mobile a:hover {
     color: #000;
+}
+
+body.dark .menu-mobile a:hover {
+    color: #fff;
 }
 
 .menu-mobile .header {
@@ -115,16 +150,24 @@ h2 {
     place-content: center;
     text-align: center;
     height: calc(100vh);
-    background-color:var(--colorFondo);
-    margin-top: -40px;
+    background-color:var(--colorFondoLight);
+    margin-top: -60px;
+}
+
+body.dark .inicio {
+    background-color: var(--colorFondoDark);
 }
 
 h1 {
     color: #333;
-    font-size: 30px;
+    font-size: clamp(.6rem, 3vw + .6rem, 2.2rem);
     position: relative;
     letter-spacing: 10px;
     width: max-content;
+}
+
+body.dark h1 {
+    color: #fff;
 }
 
 .subtitulo {
@@ -133,6 +176,10 @@ h1 {
     opacity: 0;
     transform: translateY(3rem);
     animation: fadeInUp 2s ease 7s forwards;
+}
+
+body.dark .subtitulo {
+    color: #ccc;
 }
 
 h1::before,
@@ -146,8 +193,12 @@ h1::after {
 }
 
 h1::before {
-    background-color: var(--colorFondo);
+    background-color: var(--colorFondoLight);
     animation: typewriter 6s steps(16) 1s forwards;
+}
+
+body.dark h1::before {
+    background-color: var(--colorFondoDark);
 }
 
 h1::after {
@@ -155,6 +206,10 @@ h1::after {
     background: #222;
     animation: typewriter 6s steps(16) 1s forwards,
     blink 500ms steps(15) infinite;
+}
+
+body.dark h1::after {
+    background: #999;
 }
 
 @keyframes typewriter {
@@ -188,6 +243,10 @@ h1::after {
     transform: skewY(5deg);
     position: relative;
     text-align: center;
+}
+
+body.dark .work h2 {
+    color: #fff;
 }
 
 .grid {
@@ -225,7 +284,7 @@ h1::after {
     top: -25%;
     opacity: 0;
     transition: opacity .3s ease-in-out;
-    transform: skewY(10deg) scale(1,1);
+    transform: skewY(10deg) scale(1.2,1.2);
     justify-items: center;
     align-items: center;
     text-align: center;
@@ -248,8 +307,12 @@ h1::after {
 }
 
 .grid .item .bg-hover .customer {
-    color: var(--colorFondo);
+    color: var(--colorFondoLight);
     font-weight: 50;
+}
+
+.description {
+    margin-bottom: 40px;
 }
 
 #screen {
@@ -266,8 +329,12 @@ h1::after {
     animation-duration: 2s;
 }
 
+body.dark #screen {
+    background-color: #fff;
+}
+
 #details-container {
-    background-color: var(--colorFondo);
+    background-color: var(--colorFondoLight);
     position: fixed;
     top: 0;
     left: 0;
@@ -276,6 +343,10 @@ h1::after {
     z-index: 10;
     overflow: auto;
     display: none;
+}
+
+body.dark #details-container {
+    background-color: var(--colorFondoDark);
 }
 
 #details-container .nav-bar {
@@ -290,14 +361,24 @@ h1::after {
     font-size: 12px;
 }
 
-#details-container .close .close-button a {
-    text-decoration: none;
-    color: #000;
-    font-size: 13px;
+body.dark #details-container .nav-bar .nav-buttons a {
+    color: #fff
 }
 
-#details-container .close .close-button a:hover {
+body.dark .items .item .description {
+    color: #fff;
+}
+
+body.dark .items .item .title h2 {
+    color: #fff;
+}
+
+#details-container .close .close-button a:hover span {
     color: #f00;
+}
+
+#details-container .close .close-button span {
+    color: #000 !important;
 }
 
 .item-hide {
@@ -334,6 +415,10 @@ h1::after {
     text-align: center;
 }
 
+body.dark .about h2 {
+    color: #fff;
+}
+
 .about .about-cont {
     display: flex;
     justify-content: space-evenly;
@@ -344,19 +429,24 @@ h1::after {
     width: 40%;
 }
 
-.about .about-cont .skills-cont {
-    width: 40%;
+.about .about-cont .who-cont p {
+    text-align: justify;
 }
 
-.about .about-cont .skills-cont p a {
-    text-decoration: none;
-    color: #000;
+body.dark .about .about-cont h3,
+body.dark .about .about-cont p,
+body.dark .about .about-cont a {
+    color: #fff;
+}
+
+.about .about-cont .skills-cont {
+    width: 40%;
 }
 
 /*CONTACTO*/
 
 .contact {
-    background-color: #000;
+    background-color: var(--colorFondoDark);
     margin-top: 200px;
     height: 50vh;
     display: flex;
@@ -364,10 +454,19 @@ h1::after {
     justify-content: center;
 }
 
+body.dark .contact {
+    background-color: #000;
+}
+
 .contact h2,
 .contact p {
-    color: #fff;
+    color: var(--colorFondoLight);
     text-align: center;
+}
+
+body.dark .contact h2,
+body.dark .contact p {
+    color: var(--colorFondoLight);
 }
 
 .contact h2 {
@@ -377,12 +476,18 @@ h1::after {
 
 .contact .contact-data-cont a {
     text-decoration: none;
-    color: #fff;
+    color: var(--colorFondoLight);
     margin-top: 30px;
     margin-left: 15px;
 }
 
+.contact .contact-data-cont a:hover {
+    color: #ddd;
+}
+
 /*GALERY*/
+
+
 
 /*MEDIAS*/
 
