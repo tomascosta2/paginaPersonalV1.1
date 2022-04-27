@@ -287,7 +287,17 @@ h1::after {
 #details-container .nav-bar .nav-buttons a {
     text-decoration: none;
     color: #000;
-    font-weight: lighter;
+    font-size: 12px;
+}
+
+#details-container .close .close-button a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+}
+
+#details-container .close .close-button a:hover {
+    color: #f00;
 }
 
 .item-hide {
