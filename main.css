@@ -231,6 +231,45 @@ body.dark h1::after {
     }
 }
 
+/*ACERCA*/
+
+.about {
+    margin-top: 100px;
+}
+
+.about h2 {
+    text-align: center;
+}
+
+body.dark .about h2 {
+    color: #fff;
+}
+
+.about .about-cont {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px;
+}
+
+.about .about-cont .who-cont {
+    width: 40%;
+}
+
+.about .about-cont .who-cont p {
+    text-align: justify;
+}
+
+body.dark .about .about-cont h3,
+body.dark .about .about-cont p,
+body.dark .about .about-cont a {
+    color: #fff;
+}
+
+.about .about-cont .skills-cont {
+    width: 40%;
+}
+
+
 /*WORK*/
 
 .work {
@@ -404,45 +443,6 @@ body.dark .items .item .title h2 {
     100%{height: 0vh;}
 }
 
-
-/*ACERCA*/
-
-.about {
-    margin-top: 100px;
-}
-
-.about h2 {
-    text-align: center;
-}
-
-body.dark .about h2 {
-    color: #fff;
-}
-
-.about .about-cont {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 100px;
-}
-
-.about .about-cont .who-cont {
-    width: 40%;
-}
-
-.about .about-cont .who-cont p {
-    text-align: justify;
-}
-
-body.dark .about .about-cont h3,
-body.dark .about .about-cont p,
-body.dark .about .about-cont a {
-    color: #fff;
-}
-
-.about .about-cont .skills-cont {
-    width: 40%;
-}
-
 /*CONTACTO*/
 
 .contact {
@@ -548,7 +548,7 @@ body.dark .contact p {
     .about .about-cont {
         display: flex;
         justify-content: space-evenly;
-        margin: 50px;
+        margin: 40px;
     }
 }
 
@@ -580,6 +580,7 @@ body.dark .contact p {
     .about .about-cont .skills-cont {
         margin: 0 auto;
         text-align: center;
+        width: 60%;
     }
 
 }
