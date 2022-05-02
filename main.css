@@ -474,11 +474,16 @@ body.dark .contact p {
     top: -30px;
 }
 
+.social-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .contact .contact-data-cont a {
     text-decoration: none;
     color: var(--colorFondoLight);
-    margin-top: 30px;
-    margin-left: 15px;
+    margin: 10px 8px;
 }
 
 .contact .contact-data-cont a:hover {
