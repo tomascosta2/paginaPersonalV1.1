@@ -368,6 +368,11 @@ body.dark .work h2 {
 
 .items .item .description .page-link a {
     width: 100%;
+    color: #000;
+}
+
+body.dark .items .item .description .page-link a {
+    width: 100%;
     color: #fff;
 }
 
