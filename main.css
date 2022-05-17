@@ -352,6 +352,7 @@ body.dark .work h2 {
 
 .description {
     margin-bottom: 40px;
+    display: block;
 }
 
 .items .item .description img {
@@ -360,12 +361,14 @@ body.dark .work h2 {
 }
 
 .items .item .description .page-link {
-    display: flex;
     text-align: center;
+    margin: 30px auto;
+    width: 80%;
 }
 
 .items .item .description .page-link a {
     width: 100%;
+    color: #fff;
 }
 
 
