@@ -355,9 +355,33 @@ body.dark .work h2 {
     display: block;
 }
 
-.items .item .description img {
+.description .captures-img {
+    display: flex;
+    justify-content: space-evenly;
     width: 100%;
     margin: 20px 0;
+}
+
+.description .captures-img .desktop-capture {
+    width: 75%;
+}
+
+.description .captures-img .desktop-capture img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.description .captures-img .mobile-capture {
+    width: 16.2%;
+}
+
+.description .captures-img .mobile-capture img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    left: 0;
+    object-fit: contain;
 }
 
 .items .item .description .page-link {
