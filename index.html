@@ -22,14 +22,49 @@
             <div class="menu-items">
                 <ul>
                     <li>
-                        <button class="switch" id="switch">
+                        <button class="switch english" id="switch">
                            <span class="fa-solid fa-circle-half-stroke"></span>
                         </button>
                     </li>
-                    <li><a href="#start">Inicio</a></li>
-                    <li><a href="#about">Acerca</a></li>
-                    <li><a href="#work">Trabajo</a></li>
-                    <li><a href="#contact">Contacto</a></li>
+                    <li><a href="#start" class="english">Start</a></li>
+                    <li><a href="#about" class="english">About</a></li>
+                    <li><a href="#work" class="english">My Work</a></li>
+                    <li><a href="#contact" class="english">Contact</a></li>
+                    <li>
+                        <!-- <a href="" class="switch-lang-en" id="switch-lang-en">Ingles</a> -->
+                        <button class="switch-lang-en english" id="switch-lang-en">
+                            <span>English</span>
+                        </button>
+                    </li>
+                    <li>
+                        <!-- <a href="" class="switch-lang-sp" id="switch-lang-sp">Español</a> -->
+                        <button class="switch-lang-sp english" id="switch-lang-sp">
+                            <span>Spanish</span>
+                        </button>
+                    </li>
+
+                    <li>
+                        <button class="switch spanish dsp-none" id="switch">
+                           <span class="fa-solid fa-circle-half-stroke"></span>
+                        </button>
+                    </li>
+                    <li><a href="#start" class="spanish dsp-none">Inicio</a></li>
+                    <li><a href="#about" class="spanish dsp-none">Acerca</a></li>
+                    <li><a href="#work" class="spanish dsp-none">Trabajo</a></li>
+                    <li><a href="#contact" class="spanish dsp-none">Contacto</a></li>
+                    <li>
+                        <!-- <a href="" class="switch-lang-en" id="switch-lang-en">Ingles</a> -->
+                        <button class="switch-idiom-en spanish dsp-none" id="switch-idiom-en">
+                            <span>Ingles</span>
+                        </button>
+                    </li>
+                    
+                    <li>
+                        <!-- <a href="" class="switch-lang-sp" id="switch-lang-sp">Español</a> -->
+                        <button class="switch-idiom-sp spanish dsp-none" id="switch-idiom-sp">
+                            <span>Español</span>
+                        </button>
+                    </li>
                 </ul>
             </div>
 
@@ -50,10 +85,14 @@
                 </div>
                 <div id="menu-mobile-items" class="menu-mobile-closed">
                     <ul>
-                        <li><a href="#start">INICIO</a></li>
-                        <li><a href="#about">ACERCA</a></li>
-                        <li><a href="#work">TRABAJOS</a></li>
-                        <li><a href="#contact">CONTACTO</a></li>
+                        <li><a href="#start" class="english">START</a></li>
+                        <li><a href="#about" class="english">ABOUT</a></li>
+                        <li><a href="#work" class="english">MY WORK</a></li>
+                        <li><a href="#contact" class="english">CONTACT</a></li>
+                        <li><a href="#start" class="spanish dsp-none">INICIO</a></li>
+                        <li><a href="#about" class="spanish dsp-none">ACERCA</a></li>
+                        <li><a href="#work" class="spanish dsp-none">TRABAJOS</a></li>
+                        <li><a href="#contact" class="spanish dsp-none">CONTACTO</a></li>
                     </ul>
                 </div>
 
@@ -65,7 +104,8 @@
         -->
 
         <div class="inicio" id="start">
-            <h1>Hola, soy Tomás.</h1>
+            <h1 class="english">Hi, Im Tomás.</h1>
+            <h1 class="spanish dsp-none">Hola, soy Tomás.</h1>
             <p class="subtitulo">Full Stack student</p>
         </div>
 
@@ -74,16 +114,24 @@
         -->
 
         <section class="about" id="about">
-            <h2>ACERCA DE MI</h2>
+            <h2 class="spanish dsp-none">ACERCA DE MI</h2>
+            <h2 class="english">ABOUT ME</h2>
 
             <div class="about-cont">
                 <div class="who-cont">
-                    <h3>QUIEN SOY</h3>
-                    <p>Soy Tomas Costa, un estudiante de programación Full Stack en EGG Education, con conocimientos en los suficientes lenguajes como para desarrollar paginas web con un diseño armonioso y amigable para la vista. Tengo el objetivo de convertirme en desarrollador Full Stack para finales de 2022, objetivo que pienso alcanzar, además de finalizando mi cursado en EGG aprendiendo por mi cuenta y realizando proyectos de uso real. <a href="https://drive.google.com/file/d/1EKIaldx2iLzGjBF-rBJ1zkB6bYhqQ2gj/view?usp=sharing" target="_BLANK" class="cv">CV</a></p>
+                    <h3 class="spanish dsp-none">QUIEN SOY</h3>
+                    <h3 class="english">WHO I AM</h3>
+                    <p class="spanish dsp-none">Soy Tomas Costa, un estudiante de programación Full Stack en EGG Education, con conocimientos en los suficientes lenguajes como para desarrollar paginas web con un diseño armonioso y amigable para la vista. Tengo el objetivo de convertirme en desarrollador Full Stack para finales de 2022, objetivo que pienso alcanzar, además de finalizando mi cursado en EGG aprendiendo por mi cuenta y realizando proyectos de uso real. <a href="https://drive.google.com/file/d/1EKIaldx2iLzGjBF-rBJ1zkB6bYhqQ2gj/view?usp=sharing" target="_BLANK" class="cv">CV</a></p>
+                    <p class="english">I am Tomas Costa, a Full Stack programming student at Egg Education, with enought knowledge to succesfully develop a <b>full responsive</b> web.</p>
+                    <div class="links-cont">
+                        <a class="fa-brands fa-linkedin-in" href="https://www.linkedin.com/in/tomas-costa-b10930234/" target="_blank"></a>
+                        <a class="fa-brands fa-github" href="https://github.com/tomascosta2" target="_blank"></a>
+                    </div>
                 </div>
                 <div class="skills-cont">
-                    <h3>HABILIDADES</h3>
-                    <p>HTML | CSS | javaScript | Photoshop | <a href="#contact">+</a></p>
+                    <h3 class="spanish dsp-none">HABILIDADES</h3>
+                    <h3 class="english">SKILLS</h3>
+                    <p>HTML | CSS | Java Script | Photoshop</p>
                 </div>
             </div>
         </section>
@@ -92,7 +140,8 @@
             WORK
         -->
         <section class="work" id="work">
-            <h2>MIS TRABAJOS</h2>
+            <h2 class="spanish dsp-none">MIS TRABAJOS</h2>
+            <h2 class="english">MY WORK</h2>
             <div class="grid work">
 
                 <!--ITEM-->
@@ -102,7 +151,8 @@
                     <div class="bg-hover">
                         <div class="info">
                             <div class="title">PIZZERIA ITALA</div>
-                            <div class="customer">Comercio Gastronomico</div>
+                            <div class="customer spanish dsp-none">Comercio Gastronomico</div>
+                            <div class="customer english">Pizza Restaurant</div>
                         </div>
                     </div>
                 </a>
@@ -114,7 +164,8 @@
                     <div class="bg-hover">
                         <div class="info">
                             <div class="title">MILACORI</div>
-                            <div class="customer">Venta de Joyas</div>
+                            <div class="customer spanish dsp-none">Venta de Joyas</div>
+                            <div class="customer english">Jewelry Store</div>
                         </div>
                     </div>
                 </a>
@@ -126,7 +177,8 @@
                     <div class="bg-hover">
                         <div class="info">
                             <div class="title">ASADO ARGENTO</div>
-                            <div class="customer">Parrilla Argentina</div>
+                            <div class="customer spanish dsp-none">Parrilla Argentina</div>
+                            <div class="customer english">Argentinian Grill</div>
                         </div>
                     </div>
                 </a>
@@ -138,7 +190,8 @@
                     <div class="bg-hover">
                         <div class="info">
                             <div class="title">LA YAYA</div>
-                            <div class="customer">Restaurante La Yaya</div>
+                            <div class="customer spanish dsp-none">Restaurante La Yaya</div>
+                            <div class="customer english">Yaya's Restaurant</div>
                         </div>
                     </div>
                 </a>
@@ -211,7 +264,8 @@
 
         <section class="contact" id="contact">
             <div class="contact-data-cont">
-                <h2>CONTACTO</h2>
+                <h2 class="spanish dsp-none">CONTACTO</h2>
+                <h2 class="english">CONTACT</h2>
                 <p class="contact-info">+54 9 2616841853</p>
                 <p class="contact-info"><a href="mailto:tomascostapp@gmail.com" target="_blank">tomascostapp@gmail.com</a></p>
                 <p class="contact-info">Mendoza, Argentina</p>
@@ -259,16 +313,15 @@
             <div class="items">
                 <div class="item item-hide"  id="p1">
                     <div class="main-image">
-                        <img src="img/portada1.jpg" alt="">
+                        <!-- <img src="img/portada1.jpg" alt=""> -->
                     </div>
                     <div class="title">
                         <h2>PIZZERIA ITALA</h2>
                     </div>
 
                     <div class="description">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates tempora numquam voluptatem, aperiam ipsum ducimus quis unde architecto facere non est animi beatae nulla nihil delectus quaerat asperiores adipisci tenetur.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque corporis, voluptas officiis, repellat a, magnam vitae unde praesentium odio quam dolorum placeat! Dolorem eveniet quae reiciendis, quis possimus asperiores fugit.
-                        <br>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates tempora numquam voluptatem, aperiam ipsum ducimus quis unde architecto facere non est animi beatae nulla nihil delectus quaerat asperiores adipisci tenetur.</p>
+                        
                         <div class="captures-img">
                             <div class="desktop-capture">
                                 <img src="img/captura1.jpg" alt="">
@@ -285,16 +338,15 @@
 
                 <div class="item item-hide"  id="p2">
                     <div class="main-image">
-                        <img src="img/portada2.jpg" alt="">
+                        <!-- <img src="img/portada2.jpg" alt=""> -->
                     </div>
                     <div class="title">
                         <h2>MILACORI JOYAS</h2>
                     </div>
 
                     <div class="description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque corporis, voluptas officiis, repellat a, magnam vitae unde praesentium odio quam dolorum placeat! Dolorem eveniet quae reiciendis, quis possimus asperiores fugit.
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates tempora numquam voluptatem, aperiam ipsum ducimus quis unde architecto facere non est animi beatae nulla nihil delectus quaerat asperiores adipisci tenetur.
-                        <div class="captures-img">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates tempora numquam voluptatem, aperiam ipsum ducimus quis unde architecto facere non est animi beatae nulla nihil delectus quaerat asperiores adipisci tenetur.</p>
+                            <div class="captures-img">
                             <div class="desktop-capture">
                                 <img src="img/captura2.jpg" alt="">
                             </div>
@@ -310,14 +362,13 @@
 
                 <div class="item item-hide">
                     <div class="main-image">
-                        <img src="img/portada3.jpg" alt="">
+                        <!-- <img src="img/portada3.jpg" alt=""> -->
                     </div>
                     <div class="title">
                         <h2>ASADO ARGENTO</h2>
                     </div>
                     <div class="description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque corporis, voluptas officiis, repellat a, magnam vitae unde praesentium odio quam dolorum placeat! Dolorem eveniet quae reiciendis, quis possimus asperiores fugit.
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates tempora numquam voluptatem, aperiam ipsum ducimus quis unde architecto facere non est animi beatae nulla nihil delectus quaerat asperiores adipisci tenetur.
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates tempora numquam voluptatem, aperiam ipsum ducimus quis unde architecto facere non est animi beatae nulla nihil delectus quaerat asperiores adipisci tenetur.</p>
                         <div class="captures-img">
                             <div class="desktop-capture">
                                 <img src="img/captura3.jpg" alt="">
@@ -334,15 +385,14 @@
 
                 <div class="item item-hide">
                     <div class="main-image">
-                        <img src="img/portada4.jpg" alt="">
+                        <!-- <img src="img/portada4.jpg" alt=""> -->
                     </div>
                     <div class="title">
                         <h2>LA YAYA</h2>
                     </div>
 
                     <div class="description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque corporis, voluptas officiis, repellat a, magnam vitae unde praesentium odio quam dolorum placeat! Dolorem eveniet quae reiciendis, quis possimus asperiores fugit.
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates tempora numquam voluptatem, aperiam ipsum ducimus quis unde architecto facere non est animi beatae nulla nihil delectus quaerat asperiores adipisci tenetur.
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates tempora numquam voluptatem, aperiam ipsum ducimus quis unde architecto facere non est animi beatae nulla nihil delectus quaerat asperiores adipisci tenetur.</p>
                         <div class="captures-img">
                             <div class="desktop-capture">
                                 <img src="img/captura4.jpg" alt="">
@@ -366,8 +416,7 @@
                     </div>
 
                     <div class="description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque corporis, voluptas officiis, repellat a, magnam vitae unde praesentium odio quam dolorum placeat! Dolorem eveniet quae reiciendis, quis possimus asperiores fugit.
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates tempora numquam voluptatem, aperiam ipsum ducimus quis unde architecto facere non est animi beatae nulla nihil delectus quaerat asperiores adipisci tenetur.
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates tempora numquam voluptatem, aperiam ipsum ducimus quis unde architecto facere non est animi beatae nulla nihil delectus quaerat asperiores adipisci tenetur.</p>
                     </div>
                 </div>
 
@@ -380,8 +429,7 @@
                     </div>
 
                     <div class="description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque corporis, voluptas officiis, repellat a, magnam vitae unde praesentium odio quam dolorum placeat! Dolorem eveniet quae reiciendis, quis possimus asperiores fugit.
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates tempora numquam voluptatem, aperiam ipsum ducimus quis unde architecto facere non est animi beatae nulla nihil delectus quaerat asperiores adipisci tenetur.
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates tempora numquam voluptatem, aperiam ipsum ducimus quis unde architecto facere non est animi beatae nulla nihil delectus quaerat asperiores adipisci tenetur.</p>
                     </div>
                 </div>
 
@@ -394,8 +442,7 @@
                     </div>
 
                     <div class="description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque corporis, voluptas officiis, repellat a, magnam vitae unde praesentium odio quam dolorum placeat! Dolorem eveniet quae reiciendis, quis possimus asperiores fugit.
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates tempora numquam voluptatem, aperiam ipsum ducimus quis unde architecto facere non est animi beatae nulla nihil delectus quaerat asperiores adipisci tenetur.
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates tempora numquam voluptatem, aperiam ipsum ducimus quis unde architecto facere non est animi beatae nulla nihil delectus quaerat asperiores adipisci tenetur.</p>
                     </div>
                 </div>
 
@@ -408,8 +455,7 @@
                     </div>
 
                     <div class="description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque corporis, voluptas officiis, repellat a, magnam vitae unde praesentium odio quam dolorum placeat! Dolorem eveniet quae reiciendis, quis possimus asperiores fugit.
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates tempora numquam voluptatem, aperiam ipsum ducimus quis unde architecto facere non est animi beatae nulla nihil delectus quaerat asperiores adipisci tenetur.
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates tempora numquam voluptatem, aperiam ipsum ducimus quis unde architecto facere non est animi beatae nulla nihil delectus quaerat asperiores adipisci tenetur.</p>
                     </div>
                 </div>
 
@@ -422,8 +468,7 @@
                     </div>
 
                     <div class="description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque corporis, voluptas officiis, repellat a, magnam vitae unde praesentium odio quam dolorum placeat! Dolorem eveniet quae reiciendis, quis possimus asperiores fugit.
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates tempora numquam voluptatem, aperiam ipsum ducimus quis unde architecto facere non est animi beatae nulla nihil delectus quaerat asperiores adipisci tenetur.
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates tempora numquam voluptatem, aperiam ipsum ducimus quis unde architecto facere non est animi beatae nulla nihil delectus quaerat asperiores adipisci tenetur.</p>
                     </div>
                 </div>
             </div>
@@ -435,8 +480,8 @@
     <div id="screen"></div>
 
     <script src="js/main.js"></script>
-
     <script src="js/dark.js"></script>
+    <script src="js/lang.js"></script>
 
 </body>
 </html>

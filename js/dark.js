@@ -1,3 +1,5 @@
+//Theme
+
 const btnSwitch =  document.querySelector('#switch');
 
 btnSwitch.addEventListener('click', () => {
@@ -15,3 +17,4 @@ if (localStorage.getItem('dark-mode') === 'true') {
 } else {
     document.body.classList.remove('dark');
 }
+

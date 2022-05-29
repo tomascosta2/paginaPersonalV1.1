@@ -1,4 +1,6 @@
 
+
+//Gallery
 const workItems = document.querySelectorAll('.work .item');
 const workItemsCount = workItems.lenght - 1;
 let currentIndex = 0;
