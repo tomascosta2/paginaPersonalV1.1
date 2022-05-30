@@ -41,14 +41,40 @@ p {
     justify-content: space-between;
     height: 40px;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 0px;
     z-index: 200;
+    position: fixed;
+    top: 0;
+    padding: 20px;
+    background-color: var(--colorFondoLight);
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu-scrolled {
+    background-color: rgba(202, 202, 202, 0.703) !important;
+    transition: all 0.8s;
+}
+
+body.dark .menu-scrolled {
+    background-color: rgba(51, 51, 51, 0.703) !important;
+    transition: all 0.8s;
+}
+
+body.dark .menu {
+    background-color: var(--colorFondoDark);
+}
+
+.menu .menu-items {
+    position: relative;
 }
 
 .menu .menu-items .switch {
     outline: none;
     position: absolute;
-    margin-top: 38px;
+    margin-top: 15px;
     margin-left: -10px;
     font-size: 15px;
 }
@@ -60,7 +86,7 @@ p {
 }
 
 .menu .menu-items ul li {
-    margin: 20px;
+    margin: 0 20px;
     list-style:none
 }
 
@@ -82,7 +108,7 @@ body.dark .menu .menu-items button {
     text-decoration: none;
     color: #333;
     font-size: 17px;
-    font-weight: 600;
+    font-weight: 500;
     font-family: monospace;
 }
 
@@ -100,6 +126,7 @@ body.dark .menu button span {
 .menu .menu-items ul li a:hover,
 .menu button span:hover {
     color: #ccc;
+    font-weight: 600;
 }
 
 body.dark .menu .menu-items ul li a:hover {
@@ -125,7 +152,7 @@ body.dark .menu .menu-items ul li a:hover {
 
 .menu-mobile {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
 }
 
@@ -188,7 +215,7 @@ body.dark .menu-mobile a:hover {
     text-align: center;
     height: calc(100vh);
     background-color:var(--colorFondoLight);
-    margin-top: -60px;
+    margin-top: 0px;
 }
 
 body.dark .inicio {

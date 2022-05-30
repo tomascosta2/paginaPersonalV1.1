@@ -1,45 +1,33 @@
 //Languaje
 
-const btnSwitchLangEn =  document.querySelector('#switch-lang-en');
-const btnSwitchLangSp =  document.querySelector('#switch-lang-sp');
-const btnSwitchIdiomEn =  document.querySelector('#switch-idiom-en');
-const btnSwitchIdiomSp =  document.querySelector('#switch-idiom-sp');
+const btnSwitchLangEn =  document.querySelectorAll('#switch-lang-en');
+const btnSwitchLangSp =  document.querySelectorAll('#switch-lang-sp');
+const btnSwitchIdiomEn =  document.querySelectorAll('#switch-idiom-en');
+const btnSwitchIdiomSp =  document.querySelectorAll('#switch-idiom-sp');
 const sp = document.querySelectorAll(".spanish");
 const en = document.querySelectorAll(".english");
 
-// console.log(sp);
-
-// for (let elemento in sp) {
-//     console.log(sp[elemento]);
-// }
 
 
-btnSwitchLangSp.addEventListener('click', e => {
+//DESKTOP BUTTONS
+btnSwitchLangSp[0].addEventListener('click', aEspañol);
+btnSwitchIdiomEn[0].addEventListener('click', aIngles);
 
-    // alert("ESPAÑOL");
+//MOBILE BUTTONS
+btnSwitchLangSp[1].addEventListener('click', aEspañol);
+btnSwitchIdiomEn[1].addEventListener('click', aIngles);
 
-    // for (let elemento in en) {
-    //     en[elemento].classList.add("dsp-none");
-    // }
-
+function aEspañol() {
     for (let i = 0; i < 27; i++) {
         en[i].classList.add("dsp-none");
     }
 
-    // for (let elemento in sp) {
-    //     sp[elemento].classList.remove("dsp-none");
-    // }
-
     for (let i = 0; i < 27; i++) {
         sp[i].classList.remove("dsp-none");
     }
+}
 
-});
-
-btnSwitchIdiomEn.addEventListener('click', e => {
-
-    // alert("INGLES");
-    
+function aIngles() {
     for (let i = 0; i < 27; i++) {
         sp[i].classList.add("dsp-none");
     }
@@ -47,10 +35,4 @@ btnSwitchIdiomEn.addEventListener('click', e => {
     for (let i = 0; i < 27; i++) {
         en[i].classList.remove("dsp-none");
     }
-
-});
-
-
-for (let elemento in en) {
-    // en[elemento].classList.remove("english");
 }
