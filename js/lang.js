@@ -7,16 +7,22 @@ const btnSwitchIdiomSp =  document.querySelector('#switch-idiom-sp');
 const sp = document.querySelectorAll(".spanish");
 const en = document.querySelectorAll(".english");
 
+// console.log(sp);
+
+// for (let elemento in sp) {
+//     console.log(sp[elemento]);
+// }
+
 
 btnSwitchLangSp.addEventListener('click', e => {
 
-    alert("ESPAÑOL");
+    // alert("ESPAÑOL");
 
     // for (let elemento in en) {
     //     en[elemento].classList.add("dsp-none");
     // }
 
-    for (let i = 0; i < 18; i++) {
+    for (let i = 0; i < 27; i++) {
         en[i].classList.add("dsp-none");
     }
 
@@ -24,7 +30,7 @@ btnSwitchLangSp.addEventListener('click', e => {
     //     sp[elemento].classList.remove("dsp-none");
     // }
 
-    for (let i = 0; i < 18; i++) {
+    for (let i = 0; i < 27; i++) {
         sp[i].classList.remove("dsp-none");
     }
 
@@ -32,13 +38,13 @@ btnSwitchLangSp.addEventListener('click', e => {
 
 btnSwitchIdiomEn.addEventListener('click', e => {
 
-    alert("INGLES");
+    // alert("INGLES");
     
-    for (let i = 0; i < 18; i++) {
+    for (let i = 0; i < 27; i++) {
         sp[i].classList.add("dsp-none");
     }
 
-    for (let i = 0; i < 18; i++) {
+    for (let i = 0; i < 27; i++) {
         en[i].classList.remove("dsp-none");
     }
 

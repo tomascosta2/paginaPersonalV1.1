@@ -44,6 +44,15 @@ p {
     margin-top: 20px;
     z-index: 200;
 }
+
+.menu .menu-items .switch {
+    outline: none;
+    position: absolute;
+    margin-top: 38px;
+    margin-left: -10px;
+    font-size: 15px;
+}
+
 .menu .menu-items ul {
     display: flex;
     align-items: center;
@@ -68,19 +77,29 @@ body.dark .menu .menu-items button {
     color: #fff;
 }
 
-.menu a {
+.menu a,
+.menu button {
     text-decoration: none;
     color: #333;
     font-size: 17px;
     font-weight: 600;
+    font-family: monospace;
 }
 
-body.dark .menu a {
+.menu button span img,
+.menu-mobile button span img {
+    width: 16px;
+    border-radius: 1.5px;
+}
+
+body.dark .menu a,
+body.dark .menu button span {
     color: #eee;
 }
 
-.menu .menu-items ul li a:hover {
-    color: #ddd;
+.menu .menu-items ul li a:hover,
+.menu button span:hover {
+    color: #ccc;
 }
 
 body.dark .menu .menu-items ul li a:hover {
@@ -96,11 +115,18 @@ body.dark .menu .menu-items ul li a:hover {
     font-weight: bold;
 }
 
+.dsp-none {
+
+    display: none;
+}
+
 /*MENU MOBILE*/
 
 
 .menu-mobile {
     display: none;
+    position: absolute;
+    top: 0;
 }
 
 .menu-mobile a {
@@ -203,20 +229,36 @@ h1::after {
     left: 0;
 }
 
-h1::before {
+/*HI IM TOMAS*/
+
+h1.english::before {
     background-color: var(--colorFondoLight);
     animation: typewriter 6s steps(13) 1s forwards;
 }
 
-body.dark h1::before {
-    background-color: var(--colorFondoDark);
-}
-
-h1::after {
+h1.english::after {
     width: 0.150rem;
     background: #222;
     animation: typewriter 6s steps(13) 1s forwards,
     blink 500ms steps(12) infinite;
+}
+
+/*HOLA SOY TOMAS*/
+
+h1.spanish::before {
+    background-color: var(--colorFondoLight);
+    animation: typewriter 6s steps(16) 1s forwards;
+}
+
+h1.spanish::after {
+    width: 0.150rem;
+    background: #222;
+    animation: typewriter 6s steps(16) 1s forwards,
+    blink 500ms steps(15) infinite;
+}
+
+body.dark h1::before {
+    background-color: var(--colorFondoDark);
 }
 
 body.dark h1::after {
@@ -276,6 +318,7 @@ body.dark .about h2 {
 .about .about-cont .who-cont a {
     margin: 5px;
     text-decoration: none;
+    color: #111;
 }
 
 .about .about-cont .who-cont p {
@@ -564,22 +607,14 @@ body.dark .contact p {
 
 /*IDIOMA*/
 
-.switch-lang {
-    /* position: absolute; */
-}
-
-.spanish {
+/* .spanish {
     background-color: #0f0;
     
-}
+} */
 
-.english {
+/* .english {
     background-color: #f00;
-}
-
-.dsp-none {
-    display: none;
-}
+} */
 
 /*MEDIAS*/
 
@@ -627,6 +662,10 @@ body.dark .contact p {
 
     .menu {
         display: none;
+    }
+
+    .inicio {
+        margin-top: 40px;
     }
 
     .grid {
