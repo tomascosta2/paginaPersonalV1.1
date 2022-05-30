@@ -46,7 +46,7 @@ p {
     position: fixed;
     top: 0;
     padding: 20px;
-    background-color: var(--colorFondoLight);
+    background: none;
 }
 
 .menu li {
@@ -61,10 +61,6 @@ p {
 body.dark .menu-scrolled {
     background-color: rgba(51, 51, 51, 0.703) !important;
     transition: all 0.8s;
-}
-
-body.dark .menu {
-    background-color: var(--colorFondoDark);
 }
 
 .menu .menu-items {
@@ -308,6 +304,88 @@ body.dark h1::after {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+.circulo-1-inicio {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: none;
+    border: 1px solid #666;
+    position: absolute;
+    bottom: 100px;
+    left: 10%;
+    opacity: .35;
+
+    animation: horizontal1 4s linear infinite alternate;
+}
+
+.circulo-2-inicio {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: none;
+    border: 1px solid #000;
+    position: absolute;
+    top: -20px;
+    right: 60%;
+    opacity: .3;
+
+    animation: horizontal2 20s linear infinite alternate;
+}
+
+.circulo-3-inicio {
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    background: none;
+    border: 1px solid #000;
+    position: absolute;
+    bottom: -200px;
+    right: 0;
+    opacity: .3;
+
+    animation: horizontal3 10s linear infinite alternate;
+}
+
+body.dark .circulo-1-inicio{
+    border: 1px solid #ccc;
+    opacity: .2;
+}
+body.dark .circulo-2-inicio {
+    border: 1px solid #ccc;
+    opacity: .1;
+}
+body.dark .circulo-3-inicio {
+    border: 1px solid #ccc;
+    opacity: .1;
+}
+
+@keyframes horizontal1 {
+    0% {
+    }
+
+    100% {
+        left: -50px;
+    }
+}
+
+@keyframes horizontal2 {
+    0% {
+    }
+
+    100% {
+        right: 0px;
+    }
+}
+
+@keyframes horizontal3 {
+    0% {
+    }
+
+    100% {
+        right: 30%;
     }
 }
 
