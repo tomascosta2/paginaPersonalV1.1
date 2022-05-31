@@ -150,6 +150,7 @@ body.dark .menu .menu-items ul li a:hover {
     display: none;
     position: fixed;
     top: 0;
+    z-index: 201;
 }
 
 .menu-mobile a {
@@ -157,6 +158,10 @@ body.dark .menu .menu-items ul li a:hover {
     color: #222;
     font-size: 20px;
     margin: 15px;
+}
+
+.menu-mobile button span {
+    color: #ddd;
 }
 
 body.dark .menu-mobile a {
@@ -206,8 +211,10 @@ body.dark .menu-mobile a:hover {
 /*INICIO*/
 
 .inicio {
-    display: grid;
-    place-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     height: calc(100vh);
     background-color:var(--colorFondoLight);
@@ -231,6 +238,7 @@ body.dark h1 {
 }
 
 .subtitulo {
+    margin-top: 10px;
     color: #777;
     font-size: 18px;
     opacity: 0;
@@ -305,6 +313,23 @@ body.dark h1::after {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.inicio .bajar {
+    position: absolute;
+    color: #222;
+    text-decoration: none;
+    bottom: 40px;
+    z-index: 202;
+}
+
+body.dark .inicio .bajar {
+    color: #ddd;
+}
+
+.inicio .bajar:hover {
+    font-size: 18px;
+    transition: .17s;
 }
 
 .circulo-1 {
@@ -419,7 +444,8 @@ body.dark .circulo-4 {
 /*ACERCA*/
 
 .about {
-    padding-top: 100px;
+    padding-top: 140px;
+    padding-bottom: 30px;
 }
 
 .about h2 {
@@ -477,6 +503,7 @@ body.dark .about .about-cont a {
 } 
 
 .work h2 {
+    margin-top: 50px;
     transform: skewY(5deg);
     position: relative;
     text-align: center;
@@ -782,6 +809,14 @@ body.dark .contact p {
 @media (max-width: 900px) {
     .grid .item {
         height: 120px;
+    }
+
+    .inicio .spanish {
+        font-size: 22px;
+    }
+
+    .inicio .subtitulo.spanish {
+        font-size: 14px;
     }
 }
 
