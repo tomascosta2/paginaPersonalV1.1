@@ -627,7 +627,7 @@ body.dark .items .item .description .page-link a {
 
 
 #screen {
-    background-color: #000;
+    background-color: #222;
     position: fixed;
     z-index: 500;
     top: -280px;
@@ -641,7 +641,7 @@ body.dark .items .item .description .page-link a {
 }
 
 body.dark #screen {
-    background-color: #fff;
+    background-color: #ddd;
 }
 
 #details-container {
@@ -663,7 +663,7 @@ body.dark #details-container {
 #details-container .nav-bar {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 30px;
 }
 
 #details-container .nav-bar .nav-buttons a {
