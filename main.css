@@ -629,14 +629,14 @@ body.dark .items .item .description .page-link a {
 #screen {
     background-color: #000;
     position: fixed;
-    z-index: 300;
+    z-index: 500;
     top: -280px;
     left: 0;
     width: 100vw;
     height: 10vh;
     transform: skewY(-10deg);
     transition: all .45s;
-    animation-timing-function: lineal;
+    animation-timing-function: ease-in-out;
     animation-duration: 2s;
 }
 
