@@ -11,7 +11,7 @@
 
 body {
     margin: 0;
-    font-family: reno-mono,monospace;
+    font-family: reno-mono, monospace;
     min-height: 100vh;
     background-color: var(--colorFondoLight);
 }
@@ -47,11 +47,16 @@ p {
     height: 40px;
     width: 100%;
     margin-top: 0px;
-    z-index: 200;
+    z-index: 250;
     position: fixed;
     top: 0;
     padding: 20px;
     background: none;
+    box-shadow: 0px 10px 45px -18px rgba(33,33,33,0.5);
+}
+
+body.dark .menu {
+    box-shadow: 0px 10px 45px -18px rgba(186, 186, 186, 0.4);
 }
 
 .menu li {
@@ -59,14 +64,20 @@ p {
 }
 
 .menu-scrolled {
-    background-color: rgba(202, 202, 202, 0.703) !important;
+    /* background-color: rgba(202, 202, 202, 0.5) !important; */
+    backdrop-filter: blur(2px);
+    background-color: rgba(255, 255, 255, 0.537);
     transition: all 0.8s;
 }
 
 body.dark .menu-scrolled {
+    background-color: rgba(35, 35, 35, 0.537);
+}
+
+/* body.dark .menu-scrolled {
     background-color: rgba(51, 51, 51, 0.703) !important;
     transition: all 0.8s;
-}
+} */
 
 .menu .menu-items {
     position: relative;
@@ -88,7 +99,7 @@ body.dark .menu-scrolled {
 
 .menu .menu-items ul li {
     margin: 0 20px;
-    list-style:none
+    list-style: none
 }
 
 .menu .menu-items button,
@@ -110,7 +121,7 @@ body.dark .menu .menu-items button {
     color: #333;
     font-size: 15px;
     font-weight: 500;
-    font-family: reno-mono,monospace;
+    font-family: reno-mono, monospace;
 }
 
 .menu button span img,
@@ -126,7 +137,7 @@ body.dark .menu button span {
 
 .menu .menu-items ul li a:hover,
 .menu button span:hover {
-    color: #ccc;
+    color: #000;
     font-weight: 600;
 }
 
@@ -195,7 +206,12 @@ body.dark .menu-mobile a:hover {
     padding: 0;
     display: flex;
     flex-direction: column;
-    background-color: #666;
+    background-color: rgba(177, 177, 177, 0.521);
+    backdrop-filter: blur(2px);
+}
+
+body.dark .menu-mobile ul {
+    background-color: rgba(74, 74, 74, 0.521);
 }
 
 .menu-mobile ul li {
@@ -206,7 +222,15 @@ body.dark .menu-mobile a:hover {
 
 .menu-mobile ul li a {
     font-size: 15px;
-    color: #fff;
+    color: #222;
+}
+
+.menu-mobile ul button span {
+    color: #222;
+}
+
+body.dark .menu-mobile ul button span {
+    color: #ddd;
 }
 
 .menu-mobile-closed {
@@ -222,7 +246,7 @@ body.dark .menu-mobile a:hover {
     justify-content: center;
     text-align: center;
     height: calc(100vh);
-    background-color:var(--colorFondoLight);
+    background-color: var(--colorFondoLight);
     margin-top: 0px;
 }
 
@@ -236,6 +260,7 @@ h1 {
     position: relative;
     letter-spacing: 6px;
     width: max-content;
+    /* text-transform: uppercase; */
 }
 
 body.dark h1 {
@@ -244,7 +269,7 @@ body.dark h1 {
 
 .subtitulo {
     margin-top: 5px;
-    color: #777;
+    color: rgba(83, 82, 82);
     font-size: 18px;
     opacity: 0;
     transform: translateY(3rem);
@@ -252,7 +277,7 @@ body.dark h1 {
 }
 
 body.dark .subtitulo {
-    color: #ccc;
+    color: rgb(170, 170, 170);
 }
 
 h1::before,
@@ -276,7 +301,7 @@ h1.english::after {
     width: 0.150rem;
     background: #222;
     animation: typewriter 6s steps(14) 1s forwards,
-    blink 500ms steps(13) infinite;
+        blink 500ms steps(13) infinite;
 }
 
 /*HOLA SOY TOMAS*/
@@ -290,7 +315,7 @@ h1.spanish::after {
     width: 0.150rem;
     background: #222;
     animation: typewriter 6s steps(16) 1s forwards,
-    blink 500ms steps(15) infinite;
+        blink 500ms steps(15) infinite;
 }
 
 body.dark h1::before {
@@ -315,7 +340,7 @@ body.dark h1::after {
 
 @keyframes fadeInUp {
     to {
-        opacity: 1;
+        opacity: .4;
         transform: translateY(0);
     }
 }
@@ -336,6 +361,8 @@ body.dark .inicio .bajar {
     font-size: 18px;
     transition: .17s;
 }
+
+
 
 .circulo-1 {
     width: 200px;
@@ -393,26 +420,28 @@ body.dark .inicio .bajar {
     animation: horizontal4 13s linear infinite alternate;
 }
 
-body.dark .circulo-1{
+body.dark .circulo-1 {
+    border: 1px solid #ccc;
+    opacity: .3;
+}
+
+body.dark .circulo-2 {
     border: 1px solid #ccc;
     opacity: .2;
 }
-body.dark .circulo-2 {
-    border: 1px solid #ccc;
-    opacity: .1;
-}
+
 body.dark .circulo-3 {
     border: 1px solid #ccc;
-    opacity: .1;
+    opacity: .2;
 }
+
 body.dark .circulo-4 {
     border: 1px solid #ccc;
-    opacity: .15;
+    opacity: .3;
 }
 
 @keyframes horizontal1 {
-    0% {
-    }
+    0% {}
 
     100% {
         left: -50px;
@@ -420,8 +449,7 @@ body.dark .circulo-4 {
 }
 
 @keyframes horizontal2 {
-    0% {
-    }
+    0% {}
 
     100% {
         right: 0px;
@@ -429,8 +457,7 @@ body.dark .circulo-4 {
 }
 
 @keyframes horizontal3 {
-    0% {
-    }
+    0% {}
 
     100% {
         right: 30%;
@@ -438,8 +465,7 @@ body.dark .circulo-4 {
 }
 
 @keyframes horizontal4 {
-    0% {
-    }
+    0% {}
 
     100% {
         left: 40%;
@@ -451,6 +477,8 @@ body.dark .circulo-4 {
 .about {
     padding-top: 140px;
     padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 .about h2 {
@@ -498,6 +526,23 @@ body.dark .about .about-cont a {
     width: 40%;
 }
 
+.about .bajar {
+    color: #222;
+    text-decoration: none;
+    bottom: 40px;
+    z-index: 202;
+    text-align: center;
+}
+
+body.dark .about .bajar {
+    color: #ddd;
+}
+
+.about .bajar:hover {
+    font-size: 18px;
+    transition: .17s;
+}
+
 
 /* WORK */
 
@@ -505,7 +550,7 @@ body.dark .about .about-cont a {
     padding-top: 150px;
     transform-origin: 0 0;
     transform: skewY(-5deg);
-} 
+}
 
 .work h2 {
     margin-top: 50px;
@@ -535,12 +580,12 @@ body.dark .work h2 {
 .grid .item img {
     width: 101%;
     margin-top: -60px;
-    transform: skewY(10deg) scale(1.2,1.2);
+    transform: skewY(10deg) scale(1.2, 1.2);
     transition: all .075s;
 }
 
 .grid .item:hover img {
-    transform: skewY(10deg) scale(1.4,1.4);
+    transform: skewY(10deg) scale(1.4, 1.4);
 }
 
 .grid .item .bg-hover {
@@ -553,7 +598,7 @@ body.dark .work h2 {
     top: -25%;
     opacity: 0;
     transition: opacity .3s ease-in-out;
-    transform: skewY(10deg) scale(1.2,1.2);
+    transform: skewY(10deg) scale(1.2, 1.2);
     justify-items: center;
     align-items: center;
     text-align: center;
@@ -717,9 +762,17 @@ body.dark .items .item .title h2 {
 }
 
 @keyframes fade-in {
-    0%{height: 0vh;}
-    50%{height: 180vh;}
-    100%{height: 0vh;}
+    0% {
+        height: 0vh;
+    }
+
+    50% {
+        height: 180vh;
+    }
+
+    100% {
+        height: 0vh;
+    }
 }
 
 /*CONTACTO*/
@@ -821,7 +874,8 @@ body.dark .contact p {
     .inicio .spanish {
         letter-spacing: 2px;
     }
-/*
+
+    /*
     .inicio .subtitulo.spanish {
         font-size: 14px;
     } */
