@@ -4,9 +4,14 @@
 
 }
 
+@font-face {
+    font-family: reno-mono;
+    src: url(fonts/RenoMono/OpenType-PS/RenoMono.otf);
+}
+
 body {
     margin: 0;
-    font-family: monospace;
+    font-family: reno-mono,monospace;
     min-height: 100vh;
     background-color: var(--colorFondoLight);
 }
@@ -103,9 +108,9 @@ body.dark .menu .menu-items button {
 .menu button {
     text-decoration: none;
     color: #333;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 500;
-    font-family: monospace;
+    font-family: reno-mono,monospace;
 }
 
 .menu button span img,
@@ -229,7 +234,7 @@ h1 {
     color: #333;
     font-size: clamp(.8rem, 4vw + .8rem, 2.4rem);
     position: relative;
-    letter-spacing: 10px;
+    letter-spacing: 6px;
     width: max-content;
 }
 
@@ -238,7 +243,7 @@ body.dark h1 {
 }
 
 .subtitulo {
-    margin-top: 10px;
+    margin-top: 5px;
     color: #777;
     font-size: 18px;
     opacity: 0;
@@ -264,14 +269,14 @@ h1::after {
 
 h1.english::before {
     background-color: var(--colorFondoLight);
-    animation: typewriter 6s steps(13) 1s forwards;
+    animation: typewriter 6s steps(14) 1s forwards;
 }
 
 h1.english::after {
     width: 0.150rem;
     background: #222;
-    animation: typewriter 6s steps(13) 1s forwards,
-    blink 500ms steps(12) infinite;
+    animation: typewriter 6s steps(14) 1s forwards,
+    blink 500ms steps(13) infinite;
 }
 
 /*HOLA SOY TOMAS*/
@@ -565,14 +570,16 @@ body.dark .work h2 {
     animation-timing-function: ease-in-out;
 }
 
-.grid .item:hover .bg-hover .title {
+.grid .item .bg-hover .title {
     color: #fff;
     font-size: 25px;
+    font-family: sans-serif;
 }
 
 .grid .item .bg-hover .customer {
     color: var(--colorFondoLight);
     font-weight: 50;
+    font-family: sans-serif;
 }
 
 .description {
@@ -812,15 +819,15 @@ body.dark .contact p {
     }
 
     .inicio .spanish {
-        font-size: 22px;
+        letter-spacing: 2px;
     }
-
+/*
     .inicio .subtitulo.spanish {
         font-size: 14px;
-    }
+    } */
 }
 
-@media (max-width: 825px) {
+@media (max-width: 910px) {
     .menu-mobile {
         display: flex;
         align-items: center;
