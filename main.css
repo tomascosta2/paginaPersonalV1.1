@@ -128,7 +128,7 @@ body.dark .menu .menu-items button {
 .menu a,
 .menu button {
     text-decoration: none;
-    color: #333;
+    color: #444;
     font-size: 15px;
     font-weight: 600;
     font-family: reno-mono, monospace;
@@ -142,7 +142,7 @@ body.dark .menu .menu-items button {
 
 body.dark .menu a,
 body.dark .menu button span {
-    color: #eee;
+    color: #ddd;
 }
 
 .menu .menu-items ul li a:hover,
