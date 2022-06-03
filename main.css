@@ -176,10 +176,12 @@ body.dark .menu .menu-items ul li a:hover {
     display: none;
     position: fixed;
     top: 0;
+    width: 100%;
     z-index: 201;
 }
 
 .menu-mobile a {
+    position: relative;
     text-decoration: none;
     color: #222;
     font-size: 20px;
@@ -202,18 +204,28 @@ body.dark .menu-mobile a:hover {
     color: #fff;
 }
 
+.header-cont {
+    width: 100%;
+}
+
 .menu-mobile .header {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     align-content: center;
-    width: 96.5vw;
+    width: 100%;
+    z-index: 305;
 }
 
 .menu-mobile ul {
-    margin: 0;
-    padding: 0;
+    width: fit-content;
+    position: absolute;
+    right: 10px;
+    z-index: 300;
+    margin-top: 0;
+    padding: 10px 30px;
+    border-radius: 6px;
     display: flex;
     flex-direction: column;
     background-color: rgba(177, 177, 177, 0.521);
@@ -244,7 +256,7 @@ body.dark .menu-mobile ul button span {
 }
 
 .menu-mobile-closed {
-    display: none;
+    display: none !important;
 }
 
 /*INICIO*/
@@ -270,7 +282,6 @@ body.dark .inicio {
     position: relative;
     letter-spacing: 6px;
     width: max-content;
-    z-index: 210;
     /* text-transform: uppercase; */
 }
 
@@ -947,6 +958,24 @@ body.dark .contact p {
 
     .menu {
         display: none;
+    }
+
+    
+
+    @keyframes horizontal4 {
+        0% {}
+    
+        100% {
+            left: 0;
+        }
+    }
+
+    @keyframes horizontal3 {
+        0% {}
+    
+        100% {
+            right: 30%px;
+        }
     }
 
     .grid {
