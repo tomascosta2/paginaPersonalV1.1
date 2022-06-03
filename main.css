@@ -514,6 +514,7 @@ body.dark .about h2 {
     display: flex;
     justify-content: space-evenly;
     margin: 100px;
+    margin-top: 80px;
 }
 
 .about .about-cont .who-cont {
@@ -552,7 +553,8 @@ body.dark .about .about-cont a {
 .about .bajar {
     color: #222;
     text-decoration: none;
-    bottom: 40px;
+    position: relative;
+    bottom: -10px;
     z-index: 202;
     text-align: center;
 }
@@ -687,13 +689,14 @@ body.dark .work h2 {
 
 .items .item .description .page-link {
     text-align: center;
-    margin: 30px auto;
+    margin: 80px auto;
     width: 80%;
 }
 
 .items .item .description .page-link a {
     width: 100%;
     color: #000;
+    font-size: smaller;
 }
 
 body.dark .items .item .description .page-link a {
