@@ -511,10 +511,26 @@ body.dark .circulo-4 {
     padding-bottom: 30px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.about h2 {
+.subtitle-cont {
+    width: fit-content;
+    position: relative;
     text-align: center;
+    top: 30px;
+    opacity: 0;
+    animation: subTitleApear 1s linear forwards;
+}
+
+@keyframes subTitleApear {
+    0% {
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
 }
 
 body.dark .about h2 {
@@ -676,6 +692,10 @@ body.dark .work h2 {
     margin: 20px 0;
 }
 
+.description .captures-img img {
+    border-radius: 6px;
+}
+
 .description .captures-img .desktop-capture {
     width: 75%;
 }
@@ -718,6 +738,7 @@ body.dark .items .item .description .page-link a {
 
 #screen {
     background-color: #222;
+    backdrop-filter: blur(2px);
     position: fixed;
     z-index: 500;
     top: -280px;
@@ -736,6 +757,7 @@ body.dark #screen {
 
 #details-container {
     background-color: var(--colorFondoLight);
+    /* backdrop-filter: blur(2px); */
     position: fixed;
     top: 0;
     left: 0;
