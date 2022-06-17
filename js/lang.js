@@ -18,21 +18,21 @@ btnSwitchLangSp[1].addEventListener('click', aEspañol);
 btnSwitchIdiomEn[1].addEventListener('click', aIngles);
 
 function aEspañol() {
-    for (let i = 0; i < 27; i++) {
+    for (let i = 0; i < 24; i++) {
         en[i].classList.add("dsp-none");
     }
 
-    for (let i = 0; i < 27; i++) {
+    for (let i = 0; i < 24; i++) {
         sp[i].classList.remove("dsp-none");
     }
 }
 
 function aIngles() {
-    for (let i = 0; i < 27; i++) {
+    for (let i = 0; i < 24; i++) {
         sp[i].classList.add("dsp-none");
     }
 
-    for (let i = 0; i < 27; i++) {
+    for (let i = 0; i < 24; i++) {
         en[i].classList.remove("dsp-none");
     }
 }
